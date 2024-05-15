@@ -9,14 +9,16 @@
 }
 
 .main-section {
+ 
 	position: absolute;
 	left: 50%;
 	right: 50%;
 	transform: translate(-50%, 5%);
 }
 
+ 
 .left-side-product-box img {
-	width: 100%;
+	width: 90%;
 }
 
 .left-side-product-box .sub-img img {
@@ -24,7 +26,7 @@
 	width: 83px;
 	height: 100px;
 }
-
+ 
 .right-side-pro-detail span {
 	font-size: 15px;
 }
@@ -47,34 +49,48 @@
 	width: 100%;
 	height: 200px;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-	background-color: black;
-}
-
+ 
 .carousel-indicators {
 	position: static;
 }
 
 .carousel-indicators li {
 border-radius: 50%;
-	background-color: #000;
+	background-color: rgb(2, 178, 182);
 	width: 10px;
 	height: 10px;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-	background-color: rgba(0, 0, 0, 0.5);
-	width: 45px;
-	height: 45px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
 	top: 43%;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: rgb(2, 178, 182);
 	transform: translateY(-50%);
 }
 
+.carousel-control-prev {
+  margin-left: -70px;
+  opacity: 1 !important;
+}
+
+.carousel-control-next {
+  margin-right: -70px;
+
+  opacity: 1 !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(icons/arrow_left.svg) !important;
+  height: 70% !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url(icons/arrow_right.svg) !important;
+  
+}
 
 @media (min-width:360px) and (max-width:640px) {
 	.pro-box-section .pro-box img {
